@@ -1,0 +1,89 @@
+.Landing {
+  background: url("http://s3-us-west-2.amazonaws.com/techvibes/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg")
+    center no-repeat;
+  position: relative;
+  height: 100%;
+  background-size: cover;
+}
+.Logo {
+  position: fixed;
+  left: 20px;
+  width: 130px;
+}
+.Button {
+  position: fixed;
+  text-decoration: none;
+  top: 15px;
+  border-radius: 2px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.Landing_form {
+  margin: 20px;
+}
+.Button_getStarted {
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+}
+.Input {
+  border: none;
+  outline-width: 0;
+  height: 50px;
+  width: 30%;
+  max-width: 600px;
+}
+
+.Input::placeholder {
+  padding-left: 10px;
+  font-size: 15px;
+}
+.Landing_gradient {
+  height: 100vh;
+  z-index: 1;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.Landing_body {
+  position: absolute;
+  top: 30%;
+  color: white;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.Landing_body > h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+.Landing_body > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.Landing_body > h3 {
+  font-size: 1.3rem;
+
+  font-weight: 300;
+}

@@ -1,11 +1,17 @@
 import "./App.css";
-import Row from "./Row";
-
+import React from "react";
+import Homescreen from "./Screens/Homescreen";
+import Signin from "./Screens/Signinscreen";
+import { Route, Routes } from "react-router-dom";
+import Landing from "./Screens/Landingscreen";
 function App() {
   return (
     <div className="App">
-      <p>Lets build netflix clone</p>
-      <Row title="Trending now" />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/home" element={<Homescreen />} />
+      </Routes>
     </div>
   );
 }
