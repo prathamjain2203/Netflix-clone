@@ -4,6 +4,7 @@ export const signupSuccess = (authData) => {
   return {
     type: "SIGNUP_SUCCESS",
     token: authData.idToken,
+    email: authData.email,
   };
 };
 export const onLogout = () => {

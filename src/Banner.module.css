@@ -45,9 +45,17 @@
 
 @media (max-width: 500px) {
   .Banner {
-    color: white;
-    object-fit: contain;
     height: 380px;
+  }
+  .Banner_Overview {
+    max-width: 340px;
+    font-size: 0.7rem;
+  }
+  .Banner_content {
+    padding-top: 120px;
+  }
+  .Banner_title {
+    font-size: 2.8rem;
   }
 }
 @media (max-width: 400px) {
@@ -62,8 +70,6 @@
   }
   .Banner_Overview {
     max-width: 300px;
-  }
-  .Banner_Overview {
     font-size: 0.6rem;
   }
 }

@@ -5,6 +5,7 @@ import Signin from "./Screens/Signinscreen";
 import { Route, Routes } from "react-router-dom";
 import Landing from "./Screens/Landingscreen";
 import { connect } from "react-redux";
+import Profile from "./Screens/Profile";
 import { Navigate } from "react-router-dom";
 
 function App(props) {
@@ -12,7 +13,6 @@ function App(props) {
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/signin" element={<Signin />} />
-      {/* <Route path="/home" element={<Homescreen />} /> */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
@@ -20,6 +20,7 @@ function App(props) {
     routes = (
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/home" element={<Homescreen />} />
         <Route path="*" element={<Navigate to="/" replace />} />

@@ -19,7 +19,13 @@
   position: fixed;
   left: 20px;
 }
-
+.Profile {
+  object-fit: contain;
+  position: fixed;
+  right: 20px;
+  width: 30px;
+  cursor: pointer;
+}
 .Button {
   position: fixed;
   text-decoration: none;

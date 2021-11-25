@@ -1,0 +1,60 @@
+.Profile {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+.Profile_body {
+  padding-top: 8%;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Profile_FL {
+  display: flex;
+}
+
+.Subscribe {
+  color: white;
+  background-color: red;
+  border: none;
+  outline-width: 0;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+.Signout {
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  border: none;
+  outline-width: 0;
+  padding: 5px 0;
+  margin-top: 25px;
+  width: 100%;
+}
+.Plan_FL {
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-between;
+  margin-top: 25px;
+  align-items: center;
+  gap: 80px;
+}
+
+.Profile_FL > div > h5 {
+  background-color: rgb(72, 80, 80);
+  padding: 5px;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.Profile_logo {
+  object-fit: contain;
+  width: 80px;
+  align-self: flex-start;
+}
+.Profile_data {
+  margin-left: 20px;
+}

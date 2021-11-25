@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Navbar.module.css";
-import { connect } from "react-redux";
-import * as actions from "./Store/actions/signup";
+
+import { useNavigate } from "react-router";
 
 const Navbar = (props) => {
   const [show, handleShow] = useState(false);
+  const navigate = useNavigate();
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
@@ -17,9 +18,7 @@ const Navbar = (props) => {
       window.removeEventListener("scroll", null);
     };
   }, []);
-  const onLogoutHandler = () => {
-    props.onLogout();
-  };
+
   const navClass = [classes.Navbar];
   if (show) {
     navClass.push(classes.show);
@@ -31,15 +30,17 @@ const Navbar = (props) => {
         src="https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo.png"
         alt="Netflix logo"
       />
-      <button onClick={onLogoutHandler} className={classes.Button}>
-        Log out
-      </button>
+
+      <img
+        className={classes.Profile}
+        onClick={() => {
+          navigate("/profile");
+        }}
+        src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+        alt="profile-icon"
+      />
     </div>
   );
 };
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onLogout: () => dispatch(actions.onLogout()),
-  };
-};
-export default connect(null, mapDispatchToProps)(Navbar);
+
+export default Navbar;

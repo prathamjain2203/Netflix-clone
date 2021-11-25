@@ -1,6 +1,7 @@
 const initialState = {
   token: null,
   error: null,
+  email: null,
 };
 
 const reducer = (state = initialState, actions) => {
@@ -10,11 +11,13 @@ const reducer = (state = initialState, actions) => {
         ...state,
         token: actions.token,
         error: null,
+        email: actions.email,
       };
     case "SIGNUP_ERROR":
       return {
         ...state,
         token: null,
+
         error: actions.error,
       };
     case "LOG_OUT":
@@ -22,6 +25,7 @@ const reducer = (state = initialState, actions) => {
         ...state,
         token: null,
         error: null,
+        email: null,
       };
     default:
       return state;
