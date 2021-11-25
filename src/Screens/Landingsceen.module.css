@@ -8,6 +8,7 @@
 .Logo {
   position: fixed;
   left: 20px;
+  cursor: pointer;
   width: 130px;
 }
 .Button {

@@ -18,6 +18,9 @@ const Landing = () => {
     <div className={classes.Landing}>
       <div className={classes.Landing_background}>
         <img
+          onClick={() => {
+            navigate("/Landing");
+          }}
           className={classes.Logo}
           src={
             "https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo.png"

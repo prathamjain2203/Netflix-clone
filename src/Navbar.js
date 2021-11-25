@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Navbar.module.css";
-
 import { useNavigate } from "react-router";
 
-const Navbar = (props) => {
+const Navbar = () => {
   const [show, handleShow] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
@@ -26,6 +25,9 @@ const Navbar = (props) => {
   return (
     <div className={navClass.join(" ")}>
       <img
+        onClick={() => {
+          navigate("/home");
+        }}
         className={classes.Logo}
         src="https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo.png"
         alt="Netflix logo"

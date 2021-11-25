@@ -29,7 +29,6 @@ class Signin extends Component {
 
     setTimeout(() => {
       if (this.props.token) {
-        console.log("hey");
         this.props.navigate("/home");
       }
     }, 1500);
@@ -40,6 +39,9 @@ class Signin extends Component {
       <div className={classes.Signin}>
         <div className={classes.Signin_background}>
           <img
+            onClick={() => {
+              this.props.navigate("/Landing");
+            }}
             className={classes.Logo}
             src={
               "https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo.png"
