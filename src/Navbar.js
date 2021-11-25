@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Navbar.module.css";
+import { connect } from "react-redux";
+import * as actions from "./Store/actions/signup";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [show, handleShow] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -15,6 +17,9 @@ const Navbar = () => {
       window.removeEventListener("scroll", null);
     };
   }, []);
+  const onLogoutHandler = () => {
+    props.onLogout();
+  };
   const navClass = [classes.Navbar];
   if (show) {
     navClass.push(classes.show);
@@ -26,13 +31,15 @@ const Navbar = () => {
         src="https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo.png"
         alt="Netflix logo"
       />
-      <img
-        className={classes.Profile}
-        src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
-        alt="Profile logo"
-      />
+      <button onClick={onLogoutHandler} className={classes.Button}>
+        Log out
+      </button>
     </div>
   );
 };
-
-export default Navbar;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onLogout: () => dispatch(actions.onLogout()),
+  };
+};
+export default connect(null, mapDispatchToProps)(Navbar);

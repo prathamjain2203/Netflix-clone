@@ -52,7 +52,7 @@
 }
 @media (max-width: 400px) {
   .Banner {
-    height: 320px;
+    height: 350px;
   }
   .Banner_content {
     padding-top: 100px;
@@ -62,5 +62,8 @@
   }
   .Banner_Overview {
     max-width: 300px;
+  }
+  .Banner_Overview {
+    font-size: 0.6rem;
   }
 }

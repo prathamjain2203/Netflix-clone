@@ -6,7 +6,11 @@ export const signupSuccess = (authData) => {
     token: authData.idToken,
   };
 };
-
+export const onLogout = () => {
+  return {
+    type: "LOG_OUT",
+  };
+};
 export const signupError = (error) => {
   return {
     type: "SIGNUP_ERROR",

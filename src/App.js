@@ -12,7 +12,7 @@ function App(props) {
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/signin" element={<Signin />} />
-      <Route path="/home" element={<Homescreen />} />
+      {/* <Route path="/home" element={<Homescreen />} /> */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
