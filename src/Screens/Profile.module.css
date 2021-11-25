@@ -7,7 +7,7 @@
 
 .Profile_body {
   padding-top: 8%;
-  width: 30%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -56,5 +56,47 @@
   align-self: flex-start;
 }
 .Profile_data {
-  margin-left: 20px;
+  margin-left: 40px;
 }
+
+@media (max-width: 680px) {
+  .Profile_body {
+    padding-top: 10%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 570px) {
+  .Profile_body {
+    padding-top: 14%;
+    width: 70%;
+  }
+  .Profile_logo {
+    width: 60px;
+  }
+}
+
+@media (max-width: 488px) {
+  .Profile_body {
+    padding-top: 18%;
+    width: 70%;
+  }
+  .Profile_logo {
+    width: 50px;
+  }
+  .Profile_data {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 433px) {
+  .Profile_body {
+    padding-top: 30%;
+    width: 80%;
+  }
+  .Profile_logo {
+    width: 40px;
+  }
+  .Profile_data {
+    margin-left: 20px;
+  }
+} ;
