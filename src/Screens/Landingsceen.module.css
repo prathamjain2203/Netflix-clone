@@ -87,3 +87,36 @@
 
   font-weight: 300;
 }
+
+@media (max-width: 568px) {
+  .Landing_body > h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+  .Landing_body > h2 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-weight: 400;
+  }
+  .Landing_body > h3 {
+    font-size: 1rem;
+
+    font-weight: 300;
+  }
+}
+@media (max-width: 377px) {
+  .Landing_body > h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .Landing_body > h2 {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    font-weight: 400;
+  }
+  .Landing_body > h3 {
+    font-size: 0.8rem;
+
+    font-weight: 300;
+  }
+} ;
