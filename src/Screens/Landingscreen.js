@@ -39,7 +39,14 @@ const Landing = () => {
           Ready to watch? Enter your email to create or restart your membership.
         </h3>
         <div className={classes.Landing_form}>
-          <form onSubmit={getStarterHandler}>
+          <form
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+            onSubmit={getStarterHandler}
+          >
             <input
               className={classes.Input}
               type="email"
