@@ -40,6 +40,7 @@ const Landing = () => {
         </h3>
         <div className={classes.Landing_form}>
           <form
+            className={classes.Form}
             style={{
               display: "flex",
               alignItems: "center",
